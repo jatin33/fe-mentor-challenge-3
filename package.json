@@ -1,0 +1,17 @@
+{
+  "name": "fe-mentor-challenge-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jatin33/fe-mentor-challenge-3.git",
+  "author": "Jatin Panjwani",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "prod": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/index.html ./dist/index.html && cp -a ./assets/ ./dist",
+    "serve:dev": "npx live-server"
+  },
+  "devDependencies": {
+    "live-server": "git+https://github.com/tapio/live-server.git#ad22544",
+    "tailwindcss": "^3.3.5"
+  },
+  "license": "MIT"
+}
